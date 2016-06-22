@@ -1,3 +1,3 @@
 # HackerrankProblems
 
-Solutions for Hackkr rank coding problems in java
+Solutions for Hackerrank coding problems in java
