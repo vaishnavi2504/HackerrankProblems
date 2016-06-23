@@ -10,6 +10,27 @@ import java.util.regex.*;
 
 public class Solution {
     
+    
+    //O(n) efficient using hashmap
+    public static void findIndxUsingMap(int amt, int[] arr){
+        int n=arr.length;
+        Map<Integer,Integer>hm=new HashMap<Integer,Integer>();
+         for(int i=0;i<n;i++){
+             if(hm.containsKey(amt-arr[i])){
+                 System.out.print(hm.get(amt-arr[i]));
+                 i++;
+                 System.out.println(" "+i);
+                 return;
+             }
+             else{
+                 hm.put(arr[i],i+1);
+             }
+                
+         }
+    }
+    
+    
+    //O(n^2) using 2 for loops- sucky code
     public static void findIndx(int amt, int[] arr){
         int n=arr.length;
         for(int i=0;i<n;i++){
