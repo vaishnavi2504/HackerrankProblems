@@ -8,28 +8,27 @@ import java.util.regex.*;
 
 public class Solution {
     
-    private static Object getKeyFromVal(Map hm, Object val){
-        for(Object o: hm.keySet()){
-            if(val.equals(hm.get(o)))return o;
-        }
-        return null;
-    }
+ 
      private static int lonelyInteger(int[] a) {
-         Map<Integer,Integer>hm=new HashMap<Integer,Integer>();
-        for(int x:a){
-            if(!hm.containsKey(x))hm.put(x,1);
-            else hm.put(x,hm.get(x)+1);
-        }
-         int ans=(int)getKeyFromVal(hm,1);
-         return ans;
+         if(a.length==1)return a[0];
+         for(int i=0;i<a.length;i=i+2){
+                          
+             if(i>=a.length-1)return a[i];
+             
+             if(a[i]!=a[i+1])return a[i];
+         }
+         return -1;
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] a = new int[n];
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i< n; i=i+1) {
             a[i] = in.nextInt();
         }
+        Arrays.sort(a);
+        
+        
         System.out.println(lonelyInteger(a));
     }
 
