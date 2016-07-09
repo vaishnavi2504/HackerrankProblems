@@ -33,8 +33,8 @@ public class Solution {
 	        for(int h3_i=0; h3_i < n3; h3_i++)h3[h3_i] = in.nextInt();
 	            
 	      
-	        List<Integer> l3=new ArrayList<Integer>();
-	        List<Integer> l2=new ArrayList<Integer>();
+	        Set<Integer> l3=new HashSet<Integer>();
+	        Set<Integer> l2=new HashSet<Integer>();
 	        int k=0;
 	        for(int h1_i=n1-1; h1_i >=0; h1_i--){
 	            sum1+=h1[h1_i];
