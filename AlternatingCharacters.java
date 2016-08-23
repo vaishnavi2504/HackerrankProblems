@@ -1,4 +1,8 @@
-//Link to the problem-  https://www.hackerrank.com/challenges/alternating-characters
+/*
+@author Vaishnavi Bhat
+
+Link to the problem-  https://www.hackerrank.com/challenges/alternating-characters
+**/
 
 import java.io.*;
 import java.util.*;
