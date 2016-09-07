@@ -28,11 +28,11 @@ public class Solution {
     			 long ans=cycle;
            while(l<t){
               ans--;
-              l++
+              l++;
            }
             System.out.println(ans);
             return;
-  			}
+  	}
     }
   }
 }
