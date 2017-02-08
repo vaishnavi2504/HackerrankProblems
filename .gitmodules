@@ -1,0 +1,6 @@
+[submodule "HackerrankProblems"]
+	path = HackerrankProblems
+	url = https://github.com/vaishnavi2504/HackerrankProblems.git
+[submodule "Cracking-Coding-Interview"]
+	path = Cracking-Coding-Interview
+	url = https://github.com/vaishnavi2504/HackerrankProblems.git
